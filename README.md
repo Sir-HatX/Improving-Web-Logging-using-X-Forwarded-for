@@ -66,3 +66,8 @@ Visit: http://localhost:8000 and http://localhost:8000/test
 Check logs at each layer to verify the correct IP flow using X-Forwarded-For.
 Play with it untill you achieve your target outcome :)
 Feel free to reachout for support.
+![image](https://github.com/user-attachments/assets/68f74e2c-94dc-4be4-bea0-b76d2c67f9b3)
+
+![image](https://github.com/user-attachments/assets/3a346f39-08f0-418b-bebb-eb9bdef2cc16)
+
+
