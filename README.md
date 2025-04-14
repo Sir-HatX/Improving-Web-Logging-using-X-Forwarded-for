@@ -15,3 +15,9 @@ This project enhances traditional web server logging by incorporating the `X-For
 - Real client IP logging behind reverse proxies  
 - Accurate geolocation and rate-limiting  
 - Improved security incident tracing  
+
+## Demo Setup
+
+The architecture below illustrates a typical setup using an Nginx load balancer, Nginx web server, HAProxy, and a Python API container:
+
+![Demo Setup](./image.png)
