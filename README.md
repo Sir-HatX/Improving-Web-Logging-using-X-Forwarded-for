@@ -21,3 +21,48 @@ This project enhances traditional web server logging by incorporating the `X-For
 The architecture below illustrates a typical setup using an Nginx load balancer, Nginx web server, HAProxy, and a Python API container:
 
 ![Demo Setup](./image.png)
+
+---
+
+## Getting Started
+
+Follow the steps below to get the full stack up and running using Docker Compose.
+
+### Prerequisites
+
+- Docker  
+- Docker Compose
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Sir-HatX/Improving-Web-Logging-using-X-Forwarded-for.git
+cd Improving-Web-Logging-using-X-Forwarded-for/web_demo
+```
+### 2. Project Structure
+```
+.
+├── docker-compose.yml
+├── image.png
+├── haproxy.cfg
+├── nginx_web.conf
+├── nginx_lb.conf
+├── nginx_api/
+│   ├── app.py
+│   └── Dockerfile
+```
+### 3. Start the Services
+```bash
+docker-compose up --build
+```
+This will start the following services:
+- nginx_lb (Load Balancer on port 8000)
+- nginx_web (Web server on port 7000)
+- haproxy (Proxy on port 6000)
+- nginx_api (Python API on port 5000)
+
+### 4. Test the Flow
+Visit: http://localhost:8000 and http://localhost:8000/test
+Check logs at each layer to verify the correct IP flow using X-Forwarded-For.
+Play with it untill you achieve your target outcome :)
+Feel free to reachout for support.
