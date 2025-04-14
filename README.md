@@ -20,7 +20,7 @@ This project enhances traditional web server logging by incorporating the `X-For
 
 The architecture below illustrates a typical setup using an Nginx load balancer, Nginx web server, HAProxy, and a Python API container:
 
-![Demo Setup](./image.png)
+![image](https://github.com/user-attachments/assets/3498aeda-2b67-47a9-a802-7f6969c6024f)
 
 ---
 
